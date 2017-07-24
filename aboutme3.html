@@ -1,0 +1,121 @@
+<html>
+  <head>
+  
+    <title>Anna Sivaraj</title>
+    
+    <style>
+      
+    body {
+  
+      background-color:#EDF5F4;
+      font-family:trebuchetms;
+      text-align:center;
+      margin:0;
+    }
+        background-color: #E9E9EA;
+        font-family: "Open Sans";
+        margin: 0;
+      }
+        
+    h1, h2 {
+        color: #BB8588;
+    }
+      
+    a {
+        text-decoration: none;        
+    }    
+        
+    a:link, a:visited {
+        color: #D8A48F;        
+    }    
+    
+    a:hover {
+        color: #D6CE93;        
+    }
+        
+    ul {
+        list-style-position: inside;
+    }
+        
+    .textbox {
+        width: 600px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       
+    .textbox img {
+        display: block;
+        margin: auto;
+        }    
+        
+    .slideshow {
+        width: 100%;
+        height: 500px;
+        background-color: dimgray;
+        overflow: hidden;
+    }    
+    
+    .slides {
+        width: 103%;
+        margin: -10px;
+        opacity: 0.4;
+         -webkit-filter: blur(8px);
+        display: none;  
+    }
+        
+    .title {
+        position: absolute;
+        font-size: 80px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-top: 180px;
+        color: white;
+    }    
+        
+    </style>
+  </head>
+
+  <body>
+      
+     <div class="title">Anna Sivaraj</div>
+      
+  <div>
+  
+    <img class="mySlides" src="https://lh4.googleusercontent.com/B7iorYCruCCOvh5O-Z6rsgz4_cWg3nLK4LQ7DrvgM-bhY8vsJgZrjdjpKewx9oL9BvxtAi70r0n0J_c=w1280-h726-rw">
+    <img class="mySlides" src="https://lh5.googleusercontent.com/HYnG8cOIxD0IzOkD-SCbwHFiTZj5L_sE_y0SnpMC_3Z9jaNJ0BRh5cYepFWj69J10vqtgrOnStu--jY=w1280-h726-rw">
+    <img class="mySlides" src="https://lh3.googleusercontent.com/ZHHd9dAdPOX6YBS3E7pPcFdy0n8tXa2e2Q63eoYVCURwxcG3UXD0AuN5dHv-fAJZyddBqr1zPV9pWds=w1280-h726-rw">
+    <img class="mySlides" src="https://lh4.googleusercontent.com/AyNoTQhUPATEaVeJxetuY4PaJ6uCuQEupv4Fw4vzD6zFpKpg89AqTfpx0mzK8yVcPam1zKJoptRFq2Q=w1280-h726-rw">
+    <img class="mySlides" src="https://lh3.googleusercontent.com/pNOYNT7iOLk2XP6lnHhWXNX_r70Reheui92T5_N-gXylqqUlx2-Sao2WotlqR0PmrMzj4UsOxyXBAM8=w1280-h726-rw">
+    <img class="mySlides" src="https://lh5.googleusercontent.com/KCflE-HEUfLhydKs8TDSNadp4VLpI6gYN8sKAfqzETYhLhHPdBhb8B0EODs6q9YxWk1bTQV_4NZbZec=w1280-h726-rw">
+    <img class="mySlides" src="https://lh5.googleusercontent.com/kcu9tQ9vXCyLm7S0GkHj8C4n-xxFQyxi3Gg-uYI-zkEp7tojxJldM_vzfexSWHEb8BlkRqXX0COD53A=w1280-h726-rw">
+    
+  </div>
+      
+<!-- JAVASCRIPT -->
+    <script>
+        
+    var index = 0;
+    slideshow();
+        
+    function slideshow() {
+        var i;
+        var elements = document.getElementsByClassName("slides");
+        
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.display = "none";
+        }
+        
+        index++;
+        
+        if (index > elements.length) {
+            index = 1;
+        }
+        
+        elements[index-1].style.display = "block";
+        setTimeout(slideshow, 2000);
+    }
+    </script>  
+  </body>
+</html>
